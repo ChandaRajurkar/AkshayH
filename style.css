@@ -6,8 +6,8 @@ html {
 }
 
     background: radial-gradient(#111, #071a1a);
-    color: #fff; */
-
+    color: #fff; 
+*/
 
 
 .my_nav_bar {
@@ -61,6 +61,11 @@ html {
     margin-bottom: 50px;
 }
 
+.caroimg:hover {
+    box-shadow: 0 0 150px #3deaf7;
+    cursor: pointer;
+}
+
 .carousel-indicators li {
     width: 10px;
     height: 10px;
@@ -100,6 +105,9 @@ html {
     letter-spacing: 2px;
     font-family: monospace;
 }
+
+
+/* course section */
 
 .courseheading {
     color: aqua;
@@ -169,7 +177,6 @@ html {
     height: 400px;
     width: 350px;
 
-
 }
 
 #offer2 img {
@@ -184,8 +191,6 @@ html {
     height: 400px;
     width: 350px;
 
-
-
 }
 
 
@@ -195,9 +200,6 @@ html {
     letter-spacing: 2px;
     font-family: monospace;
     text-align: justify;
-
-
-
 }
 
 
@@ -207,9 +209,8 @@ html {
     letter-spacing: 2px;
     font-family: monospace;
     text-align: justify;
-
-
 }
+
 
 
 .courseoffer {
@@ -223,8 +224,28 @@ html {
     background-color: transparent;
     text-align: center;
     cursor: pointer;
+    justify-content: center;
 }
 
+
+/* contact section */
+
+.contactheading {
+    color: aqua;
+    font-size: 50px;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    text-decoration: underline;
+    font-family: 'Cinzel Decorative', cursive;
+    font-variant: small-caps;
+    text-align: center;
+}
+
+.contactcont {
+    display: flex;
+    justify-content: space-around;
+
+}
 
 .box p {
     font-family: 'Poppins', sans-serif;
@@ -270,25 +291,29 @@ html {
 }
 
 .box:nth-child(2):hover {
-    width: 220px;
-    background: #b517c4;
-    box-shadow: 0 0 50px #b315917c;
-
-
+    width: 300px;
+    background: #550202;
+    box-shadow: 0 0 50px #e65e5480;
 }
 
 .box:nth-child(3):hover {
     width: 220px;
-    background: #1474f1;
-    box-shadow: 0 0 50px #1876f285;
-
+    background: #b517c4;
+    box-shadow: 0 0 50px #e696d47c;
 }
 
 .box:nth-child(4):hover {
     width: 220px;
+    background: #1474f1;
+    box-shadow: 0 0 50px #1876f285;
+}
+
+.box:nth-child(5):hover {
+    width: 220px;
     background: #1da1f2;
     box-shadow: 0 0 50px #1da0f280;
 }
+
 
 p {
     transform: translate(60px);
@@ -311,6 +336,10 @@ p {
     background: #25d366;
 }
 
+.mail {
+    background: #f31414;
+}
+
 .box:hover .icon {
     border: 1px solid;
 }
@@ -318,18 +347,10 @@ p {
 /*  background: white;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.26);
         color: rgb(59, 59, 59);
-        */
+*/
 
 
-.addressheading {
-    color: aqua;
-    font-size: 50px;
-    font-weight: bolder;
-    letter-spacing: 4px;
-    text-decoration: underline;
-    font-family: 'Cinzel Decorative', cursive;
-    font-variant: small-caps;
-}
+
 
 /* .sec2{
     background: #34c920;
@@ -347,13 +368,13 @@ p {
     width: 500px;
     margin: 0 auto;
     text-align: center;
-  }
-  
-  .form-group {
+}
+
+.form-group {
     margin-bottom: 20px;
-  }
-  
-  .form-group label {
+}
+
+.form-group label {
     display: block;
     font-weight: bold;
     margin-bottom: 10px;
@@ -361,24 +382,24 @@ p {
     letter-spacing: 2px;
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
-  }
-  
-  .form-group input,
-  .form-group textarea {
+}
+
+.form-group input,
+.form-group textarea {
     width: 100%;
     padding: 10px;
     font-size: 14px;
     border-radius: 20px;
-    border: 1px solid #ccc;
+    border: 2px solid #1da1f2;
     box-sizing: border-box;
-  }
-  
-  .form-group textarea {
-    height: 150px;
+}
+
+.form-group textarea {
+    height: 100px;
     resize: none;
-  }
-  
-  .submit{
+}
+
+.submit {
     background-color: #f1951c;
     color: white;
     padding: 12px 20px;
@@ -386,9 +407,8 @@ p {
     border-radius: 60px;
     cursor: pointer;
     font-size: larger;
-    }
-  
-  .submit:hover {
+}
+
+.submit:hover {
     background-color: #45a049;
-  }
-  
+}

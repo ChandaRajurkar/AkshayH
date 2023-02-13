@@ -30,6 +30,27 @@ document.getElementById("offer2").addEventListener("click", function() {
   }
 });
 
+const textElement = document.querySelector("#text");
+
+const popupElement = document.querySelector("#popup");
+
+textElement.addEventListener("click", function() {
+    const selection = window.getSelection();
+    const range = document.createRange();
+    range.selectNodeContents(textElement);
+    selection.removeAllRanges();
+    selection.addRange(range);
+    document.execCommand("copy");
+    selection.removeAllRanges();
+
+    popupElement.style.left = textElement.offsetLeft + "px";
+    popupElement.style.top = textElement.offsetTop + textElement.offsetHeight + "px";
+    popupElement.style.display = "block";
+    setTimeout(function() {
+      popupElement.style.display = "none";
+    }, 2000);
+
+  });
 
 
 
@@ -67,3 +88,7 @@ $(document).ready(function() {
     });
   });
 });
+
+
+
+
