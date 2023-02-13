@@ -1,0 +1,394 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/*body {overflow: hidden;
+}
+
+    background: radial-gradient(#111, #071a1a);
+    color: #fff; */
+
+
+
+.my_nav_bar {
+    position: sticky !important;
+    top: 0;
+    z-index: 99;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.collapse .navbar-collapse {
+    text-align: center;
+}
+
+.menuname {
+    font-weight: bold;
+    font-variant: small-caps;
+    color: #f3ae19 !important;
+    letter-spacing: 2px;
+
+}
+
+.menuli {
+
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(35, 228, 212) !important;
+    letter-spacing: 2px;
+
+}
+
+
+#welcome {
+    color: #FFFFFF;
+    bottom: 0;
+    display: table;
+    width: 100%;
+    z-index: 9;
+    background: linear-gradient(#071a1a, #0f3636)
+}
+
+#myCarousel {
+    display: table-cell;
+
+}
+
+.caroimg {
+
+    width: 600px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+.carousel-indicators {
+    bottom: -50px;
+}
+
+
+.sec1 {
+    background: linear-gradient(#111, #0e3333, #1b5353);
+}
+
+
+
+
+#aboutakshimg {
+    border-width: 4px;
+    border-color: #f3ae19;
+}
+
+.aboutheading {
+    color: aqua;
+    font-size: 50px;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    text-decoration: underline;
+    font-family: 'Cinzel Decorative', cursive;
+    font-variant: small-caps;
+}
+
+.aboutpara {
+    color: white;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-family: monospace;
+}
+
+.courseheading {
+    color: aqua;
+    font-size: 50px;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    text-decoration: underline;
+    font-family: 'Cinzel Decorative', cursive;
+    font-variant: small-caps;
+    text-align: center;
+}
+
+.i1 {
+    font-size: 64px;
+    color: #f1951c;
+    justify-content: center;
+    display: inline-block;
+    animation: up-down 1s ease-in-out infinite;
+
+
+}
+
+.i1:hover {
+    animation-play-state: paused;
+
+}
+
+
+
+@keyframes up-down {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/*
+#icondown1{
+    text-shadow: 0 0 30px #f1951c;
+}
+
+.i1 hover{
+   
+    transition: all 0.3s;
+    transform: scale(1.2);
+     box-shadow: 0 30px 45px -15px rgba(241,149,28,0.65);
+}
+*/
+
+#offer1 img {
+
+    border-top-left-radius: 120px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 120px;
+    border-bottom-left-radius: 20px;
+    border-width: 4px;
+    margin-bottom: 10px;
+    outline: 2px solid #fff;
+    padding: 14px;
+    height: 400px;
+    width: 350px;
+
+
+}
+
+#offer2 img {
+    border-top-left-radius: 120px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 120px;
+    border-bottom-left-radius: 20px;
+    border-width: 4px;
+    margin-bottom: 10px;
+    outline: 2px solid #fff;
+    padding: 14px;
+    height: 400px;
+    width: 350px;
+
+
+
+}
+
+
+#offerpara1 {
+    color: #f3ae19;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-family: monospace;
+    text-align: justify;
+
+
+
+}
+
+
+#offerpara2 {
+    color: rgb(152, 206, 90);
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-family: monospace;
+    text-align: justify;
+
+
+}
+
+
+.courseoffer {
+    display: flex;
+    justify-content: center;
+}
+
+.offerdiv {
+    margin-right: 25px;
+    margin-left: 25px;
+    background-color: transparent;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.box p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.box {
+    width: 55px;
+    height: 58px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 5px;
+    cursor: pointer;
+    margin: 0.6em;
+    transition: all .4s;
+    border-radius: 60px !important;
+
+}
+
+
+.box .icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 100px;
+    margin-right: 10px;
+    transition: all .4s;
+}
+
+.box:hover {
+    width: 220px;
+    background: #118625;
+    box-shadow: 0 0 50px #25d3657e;
+
+}
+
+.box:nth-child(2):hover {
+    width: 220px;
+    background: #b517c4;
+    box-shadow: 0 0 50px #b315917c;
+
+
+}
+
+.box:nth-child(3):hover {
+    width: 220px;
+    background: #1474f1;
+    box-shadow: 0 0 50px #1876f285;
+
+}
+
+.box:nth-child(4):hover {
+    width: 220px;
+    background: #1da1f2;
+    box-shadow: 0 0 50px #1da0f280;
+}
+
+p {
+    transform: translate(60px);
+}
+
+
+.instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.facebook {
+    background: #1877f2;
+}
+
+.twitter {
+    background: #1da1f2;
+}
+
+.whatsapp {
+    background: #25d366;
+}
+
+.box:hover .icon {
+    border: 1px solid;
+}
+
+/*  background: white;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.26);
+        color: rgb(59, 59, 59);
+        */
+
+
+.addressheading {
+    color: aqua;
+    font-size: 50px;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    text-decoration: underline;
+    font-family: 'Cinzel Decorative', cursive;
+    font-variant: small-caps;
+}
+
+/* .sec2{
+    background: #34c920;
+    width: 140%;
+    margin-left: -20%;
+    margin-right: -20%;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+   
+    padding-top: 1em;
+}
+*/
+
+.feedback-form {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #f3ae19;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .form-group textarea {
+    height: 150px;
+    resize: none;
+  }
+  
+  .submit{
+    background-color: #f1951c;
+    color: white;
+    padding: 12px 20px;
+    border: 1px solid cyan;
+    border-radius: 60px;
+    cursor: pointer;
+    font-size: larger;
+    }
+  
+  .submit:hover {
+    background-color: #45a049;
+  }
+  
