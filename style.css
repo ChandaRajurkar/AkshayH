@@ -8,7 +8,9 @@ html {
     background: radial-gradient(#111, #071a1a);
     color: #fff; 
 */
-
+.dashed-line {
+    border: 1px solid black;
+}
 
 .my_nav_bar {
     position: sticky !important;
@@ -36,17 +38,22 @@ html {
     font-weight: bold;
     color: rgb(35, 228, 212) !important;
     letter-spacing: 2px;
+    border-radius: 60px;
 
+}
+
+.menuli:hover{
+    background-color: white !important;
 }
 
 
 #welcome {
-    color: #FFFFFF;
     bottom: 0;
     display: table;
     width: 100%;
     z-index: 9;
-    background: linear-gradient(#071a1a, #0f3636)
+    background-color: white;
+    /*background: linear-gradient(#071a1a, #0f3636)*/
 }
 
 #myCarousel {
@@ -70,18 +77,27 @@ html {
     width: 10px;
     height: 10px;
     border-radius: 100%;
+    border-color: black !important;
+
+}
+
+.carousel-indicators .active {
+    background-color: black !important;
 }
 
 .carousel-indicators {
     bottom: -50px;
+
 }
 
 
 .sec1 {
-    background: linear-gradient(#111, #0e3333, #1b5353);
+    background: white;
+    /*linear-gradient(#111, #0e3333, #1b5353); */
 }
 
 
+/* about section */
 
 
 #aboutakshimg {
@@ -100,7 +116,7 @@ html {
 }
 
 .aboutpara {
-    color: white;
+    color: black;
     font-size: 18px;
     letter-spacing: 2px;
     font-family: monospace;
@@ -172,7 +188,7 @@ html {
     border-bottom-left-radius: 20px;
     border-width: 4px;
     margin-bottom: 10px;
-    outline: 2px solid #fff;
+    outline: 2px solid black;
     padding: 14px;
     height: 400px;
     width: 350px;
@@ -186,7 +202,7 @@ html {
     border-bottom-left-radius: 20px;
     border-width: 4px;
     margin-bottom: 10px;
-    outline: 2px solid #fff;
+    outline: 2px solid black;
     padding: 14px;
     height: 400px;
     width: 350px;
@@ -195,7 +211,7 @@ html {
 
 
 #offerpara1 {
-    color: #f3ae19;
+    /* color: #f3ae19;*/
     font-size: 18px;
     letter-spacing: 2px;
     font-family: monospace;
@@ -204,13 +220,12 @@ html {
 
 
 #offerpara2 {
-    color: rgb(152, 206, 90);
+    /* color: rgb(152, 206, 90);*/
     font-size: 18px;
     letter-spacing: 2px;
     font-family: monospace;
     text-align: justify;
 }
-
 
 
 .courseoffer {
