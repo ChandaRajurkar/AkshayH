@@ -9,6 +9,8 @@
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 
+  <script src="form-processor.php"> </script>
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -20,6 +22,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
   </link>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+  
 </head>
 
 <body>
@@ -93,11 +96,11 @@
     </div>
   </section>
 
-  <hr class="dashed-line">
+<!--  <hr class="dashed-line">  -->
 
 
   <section id="about" class="sec1">
-    <br>   <br>
+    <br>
 
     <div class="container">
       <br><br>
@@ -107,11 +110,13 @@
 
       <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 about_text">
         <h1 class="aboutheading"> About </h1>
-        <p class="aboutpara"> hello oisdfu lsd dshf gesbfusdhfs fsdiufhsdufb sdiufh fhsdu fhef we8hewfhwe8ud qew8hd
-          q8wehdqwh</p>
+        <p class="aboutpara"> Akshay Hiwale is a well learned person who is currently a Lecturer at Nathmal Goenka Law College, Akola, Lawyer and was a pro bono Advocate, who is passionate about imbibing the Constitutional values in young minds. 
+          He is a B. Tech (Civil Engineering) graduate from Dr. Babasaheb Ambedkar Marathwada University (Dr. BAMU) and has done post graduation study in History (i.e M. A) from Indira Gandhi National Open University (IGNOU) and in Law (i.e LLM - Constitutional law) from Sant Gaadgebaba Amaravati University (SGBAU) as well.
+          He is also qualified for the post of Assistant Professor (NET exam) in History and Law subject. 
+          And is currently working in collaboration with Adv. Kushal Jain Sir at Sarthi Law Classes, Akola.   
+        </p>
         <br>
-        <p class="aboutpara">ihoaweyh vagyed dhueiyrehqiwej[9Q0WEU WOIHE 9PQHEQJ UEQW EOIQWEJ Q290E H2QI2JE9QUE EQWU9E2Q
-          EJQUE[QJE QW </p>
+        <p class="aboutpara"></p>
         <br>
       </div>
     </div>
@@ -119,10 +124,10 @@
 
   </section>
 
-  <hr class="dashed-line">
+ <!-- <hr class="dashed-line">  -->
 
-  <section id="courses" class="sec1">
-    <br>   <br>
+  <section id="courses" class="sec2">
+    <br>
 
     <h1 class="courseheading"> Courses Offered</h1>
     <br><br><br>
@@ -177,7 +182,7 @@
 
   </section>
 
-  <hr class="dashed-line">
+ <!-- <hr class="dashed-line">  -->
 
   <section id="contact" class="sec1">
     <br> 
@@ -194,16 +199,18 @@
           <div class="icon whatsapp">
             <i class="fab fa-whatsapp fa-2x"></i>
           </div>
-          <p>+91 9096962755</p>
+          <div id="popup2" style="display: none; position: absolute; background-color: lightgray; padding: 0px; margin-left: 80px; border-radius: 0px; margin-bottom: 60px; background-color: white; color: black;">
+           Number Copied !</div>
+          <p id="text2">+91 9096962755</p>
         </div>
 
         <div class="box">
           <div class="icon mail">
             <i class="fas fa-envelope fa-2x"></i>
           </div>
-          <p id="text">aahiwale12@gmail.com</p>
-          <div id="popup" style="display: none; position: absolute; background-color: lightgray; padding: 10px;">Text has been copied to the clipboard!</div>
-
+          <div id="popup" style="display: none; position: absolute; background-color: lightgray; padding: 0px; margin-left: 180px; border-radius: 0px; margin-bottom: 60px; background-color: white; color: black;">
+             Email Copied !</div>
+          <p id="text">aahiwale12@gmail.com</p>       
         </div>
 
         <div class="box">
@@ -232,8 +239,8 @@
 
 
 
-      <div class="feedback-form">
-        <form>
+      <!-- <div class="feedback-form">
+        <form action="form-processor.php" method="post" enctype="text/plain">
           <div class="form-group">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name">
@@ -248,9 +255,22 @@
           </div>
           <input class="submit" type="submit" value="Submit">
         </form>
-      </div>
+      </div> -->
 
+<br>
 
+      <form method="post" action="contact.php">
+        <label>Name:</label>
+        <input name="sender">
+
+        <label>Email address:</label>
+        <input name="senderEmail">
+
+        <label>Message:</label>
+        <textarea rows="5" cols="20" name="message"></textarea>
+
+        <input type="submit" name="submit">
+    </form>
 
 
     </div>
@@ -285,8 +305,11 @@
 -->
 
 
+
+
   <!-- JS -->
   <script src="script.js"></script>
+  <script src="contact.php"></script>
 
 </body>
 

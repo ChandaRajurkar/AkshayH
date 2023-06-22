@@ -1,12 +1,12 @@
-document.getElementById("offer1").addEventListener("click", function() {
+document.getElementById("offer1").addEventListener("click", function () {
   var x = document.getElementById("offerpara1");
   if (x.style.display === "none") {
     x.style.display = "block";
     //document.getElementById("offerpara2").style.display = "none";
     document.getElementById("icondown1").style.display = "none";
     document.getElementById("iconup1").style.display = "block";
-    
-  
+
+
   } else {
     x.style.display = "none";
     //document.getElementById("hr").style.display = "none";
@@ -16,7 +16,7 @@ document.getElementById("offer1").addEventListener("click", function() {
 });
 
 
-document.getElementById("offer2").addEventListener("click", function() {
+document.getElementById("offer2").addEventListener("click", function () {
   var y = document.getElementById("offerpara2");
   if (y.style.display === "none") {
     y.style.display = "block";
@@ -30,32 +30,55 @@ document.getElementById("offer2").addEventListener("click", function() {
   }
 });
 
+
+
 const textElement = document.querySelector("#text");
 
 const popupElement = document.querySelector("#popup");
 
-textElement.addEventListener("click", function() {
-    const selection = window.getSelection();
-    const range = document.createRange();
-    range.selectNodeContents(textElement);
-    selection.removeAllRanges();
-    selection.addRange(range);
-    document.execCommand("copy");
-    selection.removeAllRanges();
+textElement.addEventListener("click", function () {
+  const selection = window.getSelection();
+  const range = document.createRange();
+  range.selectNodeContents(textElement);
+  selection.removeAllRanges();
+  selection.addRange(range);
+  document.execCommand("copy");
+  selection.removeAllRanges();
 
-    popupElement.style.left = textElement.offsetLeft + "px";
-    popupElement.style.top = textElement.offsetTop + textElement.offsetHeight + "px";
-    popupElement.style.display = "block";
-    setTimeout(function() {
-      popupElement.style.display = "none";
-    }, 2000);
+  popupElement.style.left = textElement.offsetLeft + "px";
+  popupElement.style.top = textElement.offsetTop + textElement.offsetHeight + "px";
+  popupElement.style.display = "block";
+  setTimeout(function () {
+    popupElement.style.display = "none";
+  }, 1500);
 
-  });
+});
 
 
+const textElement2 = document.querySelector("#text2");
+const popupElement2 = document.querySelector("#popup2");
 
-$(document).ready(function() {
-  $("form").submit(function(event) {
+textElement2.addEventListener("click", function () {
+  const selection2 = window.getSelection();
+  const range2 = document.createRange();
+  range2.selectNodeContents(textElement2);
+  selection2.removeAllRanges();
+  selection2.addRange(range2);
+  document.execCommand("copy");
+  selection2.removeAllRanges();
+
+  popupElement2.style.left = textElement2.offsetLeft + "px";
+  popupElement2.style.top = textElement2.offsetTop + textElement2.offsetHeight + "px";
+  popupElement2.style.display = "block";
+  setTimeout(function () {
+    popupElement2.style.display = "none";
+  }, 1500);
+
+});
+
+
+$(document).ready(function () {
+  $("form").submit(function (event) {
     event.preventDefault();
 
     var name = $("input[name='name']").val();
@@ -82,13 +105,9 @@ $(document).ready(function() {
       type: "POST",
       url: "form-processor.php",
       data: formData,
-      success: function() {
+      success: function () {
         alert("Form submitted successfully.");
       }
     });
   });
 });
-
-
-
-
