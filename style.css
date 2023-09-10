@@ -30,6 +30,7 @@ html {
     font-variant: small-caps;
     color: #f3ae19 !important;
     letter-spacing: 2px;
+    font-size: 18px;
 
 }
 
@@ -69,6 +70,7 @@ html {
     width: 600px;
     margin-top: 10px;
     margin-bottom: 50px;
+    border-radius: 40px;
 }
 
 .caroimg:hover {
@@ -95,6 +97,8 @@ html {
 
 .sec1 {
     background: rgb(218, 207, 207);
+    float: left;
+    width: 100%;
     /*linear-gradient(#111, #0e3333, #1b5353); */
 }
 
@@ -126,7 +130,7 @@ html {
     font-size: 18px;
     letter-spacing: 2px;
     font-family: monospace;
-    text-align: justify;
+    text-align:justify;
 }
 
 
@@ -238,6 +242,7 @@ html {
 .courseoffer {
     display: flex;
     justify-content: center;
+   
 }
 
 .offerdiv {
@@ -272,8 +277,16 @@ html {
 .box p {
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
-    color: white;
+    color: white !important;
     letter-spacing: 2px;
+    
+
+}
+#anchorinsta, #anchorfb, #anchortwit {
+    text-decoration: none;
+    color: white !important;
+    
+    
 }
 
 .box {
@@ -288,7 +301,7 @@ html {
     margin: 0.6em;
     transition: all .4s;
     border-radius: 60px !important;
-
+    
 }
 
 
@@ -301,7 +314,7 @@ html {
     align-items: center;
     color: white;
     border-radius: 100px;
-    margin-right: 10px;
+    margin-right: 20px;
     transition: all .4s;
 }
 
@@ -319,9 +332,9 @@ html {
 }
 
 .box:nth-child(3):hover {
-    width: 220px;
+    width: 250px;
     background: #b517c4;
-    box-shadow: 0 0 50px #e696d47c;
+    box-shadow: 0 0 50px  #c250cc;
 }
 
 .box:nth-child(4):hover {
@@ -339,6 +352,7 @@ html {
 
 p {
     transform: translate(60px);
+    
 }
 
 
@@ -434,3 +448,15 @@ p {
 .submit:hover {
     background-color: #45a049;
 }
+
+.copy_right_footer {
+    position:static;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    background-color:grey;
+    line-height: 3;
+    text-align: center;
+  }
+
+  

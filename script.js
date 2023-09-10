@@ -77,6 +77,29 @@ textElement2.addEventListener("click", function () {
 });
 
 
+const textElement3 = document.querySelector("#anchorinsta");
+const popupElement3 = document.querySelector("#popup3");
+
+textElement3.addEventListener("click", function () {
+  const selection3 = window.getSelection();
+  const range3 = document.createRange();
+  range3.selectNodeContents(textElement3);
+  selection3.removeAllRanges();
+  selection3.addRange(range3);
+  document.execCommand("copy");
+  selection3.removeAllRanges();
+
+  popupElement3.style.left = textElement3.offsetLeft + "px";
+  popupElement3.style.top = textElement3.offsetTop + textElement3.offsetHeight + "px";
+  popupElement3.style.display = "block";
+  setTimeout(function () {
+    popupElement3.style.display = "none";
+  }, 1500);
+
+});
+
+
+
 $(document).ready(function () {
   $("form").submit(function (event) {
     event.preventDefault();
